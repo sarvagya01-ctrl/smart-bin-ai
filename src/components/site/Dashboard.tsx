@@ -8,8 +8,8 @@ export const Dashboard = () => {
 
 const findHospitals = async () => {
   try {
-    const response = await fetch(https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:77.5162544,28.4654175,5000&bias=proximity:77.5162544,28.4654175&limit=20&apiKey=YOUR_API_KEY
-);
+    const response = await fetch("https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:77.5162544,28.4654175,5000&bias=proximity:77.5162544,28.4654175&limit=20&apiKey=YOUR_API_KEY
+");
     const data = await response.json();
     setHospitals(data.features);
   } catch (error) {
