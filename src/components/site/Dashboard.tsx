@@ -37,23 +37,23 @@ const findHospitals = async () => {
 >
   Find Nearby Hospitals
 </button>
-            <ul className="space-y-2">
+           <ul className="space-y-2">
   {hospitals.map((hospital, index) => (
-    <li <li key={index} className="border rounded-lg p-4">
-  <strong>{hospital.properties.name}</strong>
-  <p>{hospital.properties.formatted}</p>
-  <p>
-    Distance:{" "}
-    {hospital.properties.distance
-      ? `${(hospital.properties.distance / 1000).toFixed(2)} km`
-      : "N/A"}
-  </p>
-</li>
-  </p>
-</li>
+    <li key={index} className="border rounded-lg p-4">
+      <strong>{hospital.properties.name}</strong>
+
+      <p>{hospital.properties.formatted}</p>
+
+      <p>
+        Distance:{" "}
+        {hospital.properties.distance
+          ? `${(hospital.properties.distance / 1000).toFixed(2)} km`
+          : "N/A"}
+      </p>
     </li>
   ))}
 </ul>
+
                 <div className="grid sm:grid-cols-2 gap-3 mb-8">
               {[
                 { icon: Activity, label: "Real-time telemetry" },
