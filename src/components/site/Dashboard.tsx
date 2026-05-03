@@ -39,8 +39,18 @@ const findHospitals = async () => {
 </button>
             <ul className="space-y-2">
   {hospitals.map((hospital, index) => (
-    <li key={index} className="text-sm text-muted-foreground">
-      {hospital.properties.name}
+    <li <li key={index} className="border rounded-lg p-4">
+  <strong>{hospital.properties.name}</strong>
+  <p>{hospital.properties.formatted}</p>
+  <p>
+    Distance:{" "}
+    {hospital.properties.distance
+      ? `${(hospital.properties.distance / 1000).toFixed(2)} km`
+      : "N/A"}
+  </p>
+</li>
+  </p>
+</li>
     </li>
   ))}
 </ul>
