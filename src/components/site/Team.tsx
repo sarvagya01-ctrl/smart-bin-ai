@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 const team = [
   {
-    name: "arshlan Khan",
+    name: "​SARVAGYA SHUKLA",
     role: "Hardware & Embedded",
     initials: "AK",
     socials: {
@@ -25,7 +25,7 @@ const team = [
   {
     name: "Rohan Iyer",
     role: "IoT & Cloud",
-    initials: "RI",
+    initials: "PG",
     socials: {
       github: "https://github.com",
       linkedin: "https://linkedin.com",
