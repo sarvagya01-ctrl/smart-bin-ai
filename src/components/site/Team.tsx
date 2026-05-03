@@ -3,9 +3,9 @@ import { Reveal } from "./Reveal";
 
 const team = [
   {
-    name: "Aarav Mehta",
+    name: "arshlan Khan",
     role: "Hardware & Embedded",
-    initials: "AM",
+    initials: "AK",
     socials: {
       github: "https://github.com",
       linkedin: "https://linkedin.com",
