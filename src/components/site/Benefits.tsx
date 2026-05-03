@@ -40,7 +40,7 @@ export const Benefits = () => {
             { v: "8", l: "Pilot cities" },
             { v: "4.9★", l: "Citizen rating" },
           ].map((s) => (
-            <div key={s.l} className="glass rounded-2xl p-6 text-center neon-border">
+            <div key={s.l} className="glass rounded-2xl p-6 text-center neon-border text-[#5bfb9e]/[0.97]">
               <div className="font-display text-4xl font-bold text-gradient">{s.v}</div>
               <div className="text-sm text-muted-foreground mt-1">{s.l}</div>
             </div>
