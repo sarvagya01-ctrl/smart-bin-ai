@@ -2,8 +2,19 @@ import dashboardImg from "@/assets/dashboard-preview.jpg";
 import { Activity, MapPin, TrendingDown, Users } from "lucide-react";
 import { InteractiveDashboard } from "./InteractiveDashboard";
 import { Reveal } from "./Reveal";
-
+import { useState } from "react";
 export const Dashboard = () => {
+  const [hospitals, setHospitals] = useState<any[]>([]);
+
+const findHospitals = async () => {
+  try {
+    const response = await fetch("PASTE_YOUR_GEOAPIFY_URL_HERE");
+    const data = await response.json();
+    setHospitals(data.features);
+  } catch (error) {
+    console.error("Error fetching hospitals:", error);
+  }
+};
   return (
     <section id="dashboard" className="py-24 relative">
       <div className="container">
@@ -20,6 +31,17 @@ export const Dashboard = () => {
               Monitor every bin in real time. Predict overflows. Optimize routes
               with data-driven insights pulled straight from the field.
             </p>
+            <button
+  onClick={findHospitals}
+  className="bg-primary text-white px-6 py-3 rounded-xl font-semibold mb-6"
+>
+  Find Nearby Hospitals
+</button>
+            <ul>
+  {hospitals.map((hospital, index) => (
+    <li key={index}>{hospital.properties.name}</li>
+  ))}
+</ul>
             <div className="grid sm:grid-cols-2 gap-3 mb-8">
               {[
                 { icon: Activity, label: "Real-time telemetry" },
