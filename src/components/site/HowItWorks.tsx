@@ -11,7 +11,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section id="how" className="py-24 relative">
+    <section id="how" className="py-24 relative scroll-mt-20">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="text-sm font-semibold text-primary tracking-widest uppercase mb-3">

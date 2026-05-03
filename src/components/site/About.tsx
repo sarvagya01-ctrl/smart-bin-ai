@@ -2,7 +2,7 @@ import { AlertTriangle, Trash2, Recycle } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-24 relative scroll-mt-20">
       <div className="container">
         <div className="max-w-2xl mb-16">
           <div className="text-sm font-semibold text-primary tracking-widest uppercase mb-3">
