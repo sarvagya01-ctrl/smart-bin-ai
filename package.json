@@ -1,4 +1,11 @@
 {
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix ./smart-bin-ai-main",
+    "build": "npm run build --prefix ./smart-bin-ai-main",
+    "preview": "npm run preview --prefix ./smart-bin-ai-main",
+    "lint": "npm run lint --prefix ./smart-bin-ai-main"
+  },
   "dependencies": {
     "@tensorflow-models/coco-ssd": "^2.2.3",
     "@tensorflow/tfjs": "^4.22.0",
